@@ -1,5 +1,5 @@
 pipeline {
-  agent { label 'linux' }
+  agent { label 'ec2-linux-docker-agent' }
   options {
     buildDiscarder(logRotator(numToKeepStr: '5'))
   }
